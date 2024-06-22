@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 100px;
+            text-align: center;
+        }
+
+        .column1{
+            width: 20%;
+            background-color: orange;
+        }
+
+        .column2{
+            width: 20%;
+            background-color: greenyellow;
+        }
+
+        .column3{
+            width: 20%;
+            background-color: aquamarine;
+        }
+
+        header,footer{
+            background-color: pink;
+            text-align: center;
+        }
+
+        @media screen and (max-width:768px){
+            .column1,.column2{
+                width: 50%;
+            }
+            .column3{
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:450px) {
+            .column1,.column2,.column3 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <div class="column column1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis eaque sint, nisi delectus ad, voluptatibus debitis pariatur tempora cupiditate aut alias distinctio dignissimos consequuntur, dicta ratione voluptatum nulla ducimus maxime.</div>
+        <div class="column column2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, aut! Animi rem consectetur accusantium corporis sequi ipsum, labore quidem laboriosam, ad tempore dolorum, ipsa eos ab fugit recusandae nemo reprehenderit!</div>
+        <div class="column column3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eum quas esse, quis ex quia architecto incidunt, placeat accusamus cumque voluptatum debitis! Repellendus, laudantium? Quaerat et ratione tenetur quidem cum.</div>
+    </main>
+    <footer>FOOTER</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+.form-inline{
+    display: grid;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-inline label{
+    margin: 5px 10px 5px 0;
+}
+
+.form-inline input{
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: darkgray;
+    border: 1px solid #ddd;
+}
+
+.form-inline select{
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: darkgray;
+    border: 1px solid #ddd;
+}
+
+.form-inline option{
+    color: black;
+}
+
+
+.form-inline button{
+    padding: 10px 20px;
+    background-color: royalblue;
+    border: #ddd;
+    color: azure;
+    cursor: pointer;
+}
+
+.form-inline button:hover{
+    background-color: crimson;
+}
+
+@media(max-width:800px){
+    .form-inline input{
+        margin: 10px 0;
+    }
+
+    .form-inline{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

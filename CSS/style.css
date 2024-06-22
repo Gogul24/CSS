@@ -1,0 +1,20 @@
+.heading
+{
+    background-color: beige;
+    color: aqua;
+}
+*{
+    background-color: lightcoral;
+    font-family: Verdana;
+}
+.myclass{
+    font-size: medium;
+    color: darkred;
+    text-align: center;
+    text-decoration: dotted;
+}
+.myclass1{
+    font-size: small;
+    color: black;
+    text-decoration: solid;
+}

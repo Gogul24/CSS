@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormWithIcon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+
+background-color: #ffffff;
+color: #000000;
+
+
+        }
+
+        .Container {
+            
+            margin: 20px;
+        }
+
+        label{
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            display: block;
+        }
+
+        input{
+            background-color: rgb(244, 232, 232);
+            padding: 15px;
+            padding-left: 10px;
+            border: none;
+            width: 100%;
+            
+        }
+
+        .tp{
+            font-weight: 500;
+            margin-top: 40px;
+        }
+
+        .button {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            color:#fff ;
+            background-color: rgba(26, 237, 114, 0.825);
+            cursor: pointer;
+            width: 100%;
+            margin-top: 40px;
+        }
+        .Signin {
+            text-align: center;
+            margin-top: 40px;
+            
+        }
+        @media (max-width:500px) {
+            .button{
+                width: 100%;
+                cursor: pointer;
+
+            }
+
+            .tp{
+                text-align: center;
+            }
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <form action="success.html">
+    <div class="Container">
+    <h1 class="reg">Register</h1>
+    <p style="font-weight: 500;">Pls fill this form to create an account</p>
+<hr>
+    
+    <label for="mail">Email</label>
+    <input type="mail" placeholder="Enter your Mail" required >
+    <label for="password">Password</label>
+    <input type="password" placeholder="Enter your Password" required >
+    <label for="password">Repeat Password</label>
+    <input type="password" placeholder="Repeat Password" required >
+    </br><hr>
+    <p class="tp">By creating an account you agree to your <a href="www.google.com">Terms & condition</a></p>
+    <button class="button">Register</button>
+    <p class="Signin">Aleardy I have an account?<a href="www.google.com">Signin.</a></p>
+
+    </div>
+</form>
+</body>
+</html>
